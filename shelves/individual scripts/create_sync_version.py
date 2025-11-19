@@ -67,7 +67,8 @@ version_pos = source_path.rfind(version)
 sync_version_target_path = source_path[:version_pos] + "0.0.0.0.hda"
 
 # Replace folder for test output (remove or adjust as needed)
-sync_version_target_path = sync_version_target_path.replace("otls", "otls_stable")
+#(keep in mind that if you don't set up this new path to also install houdini will not detect this hdas on new scenes! So it's recommended to save it to the otls folder directly!)
+#sync_version_target_path = sync_version_target_path.replace("otls", "otls_stable")
 
 # Build the new HDA name with the sync version
 description_parts = sync_def_source.nodeTypeName().split("::")
