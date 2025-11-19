@@ -67,7 +67,7 @@ version_pos = source_path.rfind(version)
 sync_version_target_path = source_path[:version_pos] + "0.0.0.0.hda"
 
 # Replace folder for test output (remove or adjust as needed)
-sync_version_target_path = sync_version_target_path.replace("otls", "testDelete")
+sync_version_target_path = sync_version_target_path.replace("otls", "otls_stable")
 
 # Build the new HDA name with the sync version
 description_parts = sync_def_source.nodeTypeName().split("::")
